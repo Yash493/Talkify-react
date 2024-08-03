@@ -1,0 +1,98 @@
+.chatList {
+    flex: 1;
+    overflow: scroll;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #444 #1a1a1a; /* Firefox */
+  }
+  
+  .chatList .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .chatList .search .searchBar {
+    flex: 1;
+    background-color: rgba(17, 25, 40, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .chatList .search .searchBar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+  }
+  
+  .chatList .search .searchBar img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .chatList .search .add {
+    background-color: rgba(17, 25, 40, 0.5);
+    height: 36px;
+    width: 36px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .chatList .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #dddddd35;
+  }
+  
+  /* WebKit browsers */
+  .chatList::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .chatList::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+  }
+  
+  .chatList::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+    border: 3px solid #1a1a1a; /* Border to match the track */
+  }
+  
+  .chatList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .chatList .item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+
+  .chatList .item .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    span{
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+  }
+  

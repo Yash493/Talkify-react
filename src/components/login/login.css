@@ -1,72 +1,72 @@
-.login{
-  width: 100px;
+.login {
+  width: 80%; /* Change this to a percentage of the container width */
+  max-width: 800px; /* Set a max width to ensure it doesn't get too wide */
   height: 100%;
+  margin: 0 auto; /* Center the .login container horizontally */
   display: flex;
   align-items: center;
+  justify-content: center; /* Center the items inside the .login container */
   gap: 100px;
-
-
-  .items{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-
-    input{
-        padding: 20px;
-        border: none;
-        outline: none;
-        background-color: rgba(17,25,40,0.5);
-        color: white;
-        border-radius: 5px;
-    } 
-
-    label{
-     width: 100%; 
-     display: flex;
-     align-items: center;
-     justify-content: space-between; 
-     cursor: pointer; 
-     text-decoration: underline;
-     img{
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-        object-fit: cover;
-        opacity: 0.6;
-     }
-    }
-
-    button{
-       width: 100%;
-       padding: 20px;
-       border: none;
-       background-color: #1f8ef1;
-       color: white; 
-       font-weight: 500;
-
-       &:disabled{
-        cursor:not-allowed;
-        background-color: #1f8ff19c;
-       }
-    }
-    }
-
-    
-  }
-
-  
 }
-.separator{
-    height: 80%;
-    width: 2px;
-    background-color: #dddddd35;
-  }
+
+.items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+input {
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(17, 25, 40, 0.5);
+  color: white;
+  border-radius: 5px;
+}
+
+label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+label img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: #1f8ef1;
+  color: white;
+  font-weight: 500;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #1f8ff19c;
+}
+
+.separator {
+  height: 80%;
+  width: 2px;
+  background-color: #dddddd35;
+}
